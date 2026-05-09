@@ -1,0 +1,38 @@
+{
+  "name": "logging-middleware",
+  "version": "1.0.0",
+  "description": "Reusable structured logging middleware for the Affordmed campus notification platform evaluation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "README.md"
+  ],
+  "scripts": {
+    "build":      "tsc",
+    "build:watch": "tsc --watch",
+    "register":   "ts-node scripts/register.ts",
+    "test:log":   "ts-node scripts/test-log.ts",
+    "clean":      "rimraf dist"
+  },
+  "keywords": [
+    "logging",
+    "middleware",
+    "typescript",
+    "affordmed",
+    "campus-notifications"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios":  "^1.6.8",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "rimraf":      "^5.0.5",
+    "ts-node":     "^10.9.2",
+    "typescript":  "^5.4.5"
+  }
+}
